@@ -17,9 +17,9 @@
   }
   .seotext{
     font-family:arial;
-    font-size:.9em;
+    font-size:1em;
     color:#f0f0f0;
-    letter-spacing:-1px;
+    letter-spacing:0px;
     width:60%;
     text-align:left;
   }
@@ -27,14 +27,14 @@
        font-family:arial;
     font-size:1.4em;
     color:#f0f0f0;
-    letter-spacing:-1px;
+    letter-spacing:0px;
     width:60%;
     text-align:left;
   }
   
   .mainlink{
     color:black;
-    letter-spacing:-1px;
+    letter-spacing:0px;
     font-size:1em;
     font-family:arial;
     text-decoration:none;
@@ -94,7 +94,15 @@ body {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+ .carwallpapers{
+    margin-left:180px;
+    margin-top:0px;
+  }
+@media screen and (max-width: 610px) {
+   .carwallpapers{
+    margin-left:0px;
+     margin-top:60px;
+  }
   .column {
     -ms-flex: 50%;
     flex: 50%;
@@ -131,10 +139,12 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  letter-spacing:-1px;
+  letter-spacing:0px;
 }
 
-.active {
+ .active {
+  position:fixed;
+  border-bottom-right-radius:13px;
   background-color: red;
   color: white;
 }
@@ -224,16 +234,17 @@ body {
 </style>
 
 <div class="topnav" id="myTopnav">
-  <a href="/" class="active">Modified Car Photos</a>
-  <a href="/modified-car-wallpapers-4k-desktop-mobile">Car Wallpapers</a>
-  <a href="https://modcarsforsale.com/">Cars for Sale</a>
+  <a title="Modified Car Photos" href="/" class="active">Submit Car Photos</a>
+  <a href="/modified-car-wallpapers-4k-desktop-mobile" class="carwallpapers">Car Wallpapers</a>
+  <a href="/archive" >Archive</a>
+<a href="https://modcarsforsale.com/" target="_blank" title="Modified Cars for Sale" >Cars for Sale</a>
   <div class="dropdown">
     <button class="dropbtn">More 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="/mobile-car-wash-near-me">Mobile Car Wash Near Me</a>
-      <a href="https://modcarsforsale.com/best-cars-to-modify">Best Cars to Modify</a>
+      <a href="https://modcarsforsale.com/best-cars-to-modify" target="_blank" title="Best Cars to Modify">Best Cars to Modify</a>
     </div>
   </div> 
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -932,7 +943,7 @@ function myFunction() {
           <a title="Modified Car Photos" class="footerlink" href="/">Modified Car Photos</a><br>
           <a title="Car Wallpapers" class="footerlink" href="/modified-car-wallpapers-4k-desktop-mobile">Car Wallpapers</a><br>
           <a title="Cars for Sale" class="footerlink" href="https://modcarsforsale.com/">Cars for Sale</a><br>
-          <a title="Racing Simulator Games" class="footerlink" href="https://racingsimulatorgames.com/">Racing Simulator Games</a>
+          <a title="Racing Simulator Games" class="footerlink" href="https://racingsimulatorgames.com/"></a>
         </div>
         <div class="boxone">
           
@@ -996,10 +1007,11 @@ function myFunction() {
       }
       
       .footerlink{
+line-height:35px;
         text-decoration:none;
         color:black;
-        font-size:.9em;
-        letter-spacing:-1px;
+        font-size:1em;
+        letter-spacing:0px;
         
       }
       
