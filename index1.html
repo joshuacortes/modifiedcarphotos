@@ -1,0 +1,149 @@
+<div style="position:fixed;width:100%; background-color:#000000;">
+  <p class="logo">WheelPoints</p>
+  <header>
+  <nav>
+    <a href="#" id="menu-toggle">MENU</a>
+    <ul id="toggled">
+      <li>Home</li>
+      <li>How to Play</li>
+      <li>Sign Up</li>
+      <li>Redeem</li>
+      <li>Leaderboard</li>
+      <li>Gallery</li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+ 
+  /* simple responsive navigation */
+header {
+  position: relative;
+  background-color: #000000;
+  margin-top:-25px;
+}
+
+#menu-toggle {
+  display: block;
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: .35em;
+  border: 1px grey solid;
+}
+
+ul {
+  clear: left;
+  list-style-type: none;
+  color: white;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#toggled {
+  display: none;
+}
+
+li {
+    padding: 1em 0 1em 1.4em;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+  
+  #menu-toggle {
+    display: none;
+  }
+  nav {
+    float: none;  
+  }
+  ul {
+    display: block !important;
+  }
+  li {
+    float: left;
+    padding: 1em;
+    border-top: none;
+  }
+
+}
+</style>
+<script>
+  // function to change the background color of the menu button and the display value of the menu
+function accordionMenu() {
+  var menu = document.getElementById("toggled");
+	var menuStyle = window.getComputedStyle(menu);
+	var display = menuStyle.getPropertyValue('display');
+  
+  if (display === 'none') {
+    toggle.style.backgroundColor = "gray";
+    menu.style.display = "block";
+  } else {
+    toggle.style.backgroundColor = "transparent";
+    menu.style.display = "none";
+  };
+};
+
+// add event listener to menu button
+var toggle = document.getElementById("menu-toggle");
+toggle.addEventListener("click", accordionMenu, false);
+</script>
+</div>
+<div style="height:200px;">
+  </div>
+<center>
+<div style="background-color:rgba(16 18 27 / 40%); width:80%; border-radius:14px;">
+  <p class="apptext"> testtesttesttest test</p>
+    
+<div style="height:600px;">
+  </div>
+</center>
+
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+  .logo{
+    color:#fff;
+    text-align:center;
+    font-weight:bold;
+    font-style:italic;
+    margin-top:15px;
+    font-size:2em;
+  }
+body  {
+  margin:0;
+  padding:0;
+    background-image: url('https://images.pexels.com/photos/13016009/pexels-photo-13016009.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+  .apptext{
+    color:#fff;
+  }
+
+
+</style>
