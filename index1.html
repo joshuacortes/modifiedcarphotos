@@ -1,127 +1,59 @@
 <div style="position:fixed;width:100%; background-color:#000000;">
   <p class="logo">WheelPoints</p>
-  <header>
-  <nav>
-    <a href="#" id="menu-toggle">MENU</a>
-    <ul id="toggled">
-      <li>Home</li>
-      <li>How to Play</li>
-      <li>Sign Up</li>
-      <li>Redeem</li>
-      <li>Leaderboard</li>
-      <li>Gallery</li>
-    </ul>
-  </nav>
-</header>
-
-<style>
- 
-  /* simple responsive navigation */
-header {
-  position: relative;
-  background-color: #000000;
-  margin-top:-25px;
-}
-
-#menu-toggle {
-  display: block;
-  float: right;
-  color: white;
-  text-decoration: none;
-  padding: .35em;
-  border-top: 1px grey solid;
-  
-  border-left: 1px grey solid;
-  border-top-left-radius:10px;
-}
-
-ul {
-  clear: left;
-  list-style-type: none;
-  color: white;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-#toggled {
-  display: none;
-}
-
-li {
-    padding: 1em 0 1em 1.4em;
-}
-
-/* media queries */
-
-@media screen and (max-width: 1000px) { 
-  #toggled {
-  display: none;
-}
-  #menu-toggle {
-    display: block;
-  }
-  nav {
-    float: none;  
-  }
-  ul {
-    display: none !important;
-  }
-  li {
-    float: left;
-    padding: 1em;
-    border-top: none;
-  }
-
-}
-</style>
-<script>
-  // function to change the background color of the menu button and the display value of the menu
-function accordionMenu() {
-  var menu = document.getElementById("toggled");
-	var menuStyle = window.getComputedStyle(menu);
-	var display = menuStyle.getPropertyValue('display');
-  
-  if (display === 'none') {
-    toggle.style.backgroundColor = "gray";
-    menu.style.display = "block";
-  } else {
-    toggle.style.backgroundColor = "transparent";
-    menu.style.display = "none";
-  };
-};
-
-// add event listener to menu button
-var toggle = document.getElementById("menu-toggle");
-toggle.addEventListener("click", accordionMenu, false);
-</script>
 </div>
-<div style="height:180px;">
+<div style="height:100px;">
   </div>
+
+
+
 <center>
 <div style="background-color:rgba(16 18 27 / 40%); width:80%; border-radius:14px;">
-  <p class="apptext"> testtesttesttest test</p>
+  <div style="height:30px;"></div>
+  <div style="overflow:Hidden; padding:10px;">
+  <a class="apptextone"> Home</a>
+  <a class="apptextone"> How To Play</a>
+  <a class="apptextone"> Sign Up</a>
+  </div>
+     <div style="overflow:Hidden; padding:10px;">
+  <a class="apptexttwo">Redeem</a>
     
-<div style="height:600px;">
+  <a class="apptexttwo"> Leaderboard</a>
+  </div>
+  
+<hr class="new1">
+    <br><br>
   </div>
 </center>
 
-</div>
-<div style="height:200px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height:180px;">
   </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
-
+ 
   .logo{
     color:#fff;
     text-align:center;
     font-weight:bold;
     font-style:italic;
-    margin-top:15px;
-    font-size:2em;
+    font-size:1.6em;
+    font-family:arial;
   }
 body  {
-  font-family:arial;
+  font-family:courier;
   margin:0;
   padding:0;
     background-image: url('https://images.pexels.com/photos/13016009/pexels-photo-13016009.jpeg');
@@ -150,9 +82,41 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 }
 
-  .apptext{
+  .apptextone{
     color:#fff;
+    float:left;
+    margin-left:5%;
+    font-weight:bold;
+    text-align:left;
+    font-size:1.1em;
+  }
+  
+  .apptextone:hover{
+    color:red;
   }
 
+  .apptexttwo{
+    
+    font-size:1.1em;
+      color:#fff;
+    text-align:left;
+    background: rgba(128, 0, 0, 0.8);
+    font-style:italic;
+    padding:5px;
+    margin:2px;
+    border-radius:6px;
+    float:left;
+    margin-left:5%;
+    font-weight:bold;
+  }
+  
+  .apptexttwo:hover{
+  opacity:0.9;}
+  
+  hr.new1 {
+    display: block;
+    opacity:0.2;
+}
+  
 
 </style>
