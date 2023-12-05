@@ -53,16 +53,18 @@ li {
 
 /* media queries */
 
-@media screen and (min-width: 800px) {
-  
+@media screen and (max-width: 1000px) { 
+  #toggled {
+  display: none;
+}
   #menu-toggle {
-    display: none;
+    display: block;
   }
   nav {
     float: none;  
   }
   ul {
-    display: block !important;
+    display: none !important;
   }
   li {
     float: left;
@@ -119,6 +121,7 @@ toggle.addEventListener("click", accordionMenu, false);
     font-size:2em;
   }
 body  {
+  font-family:arial;
   margin:0;
   padding:0;
     background-image: url('https://images.pexels.com/photos/13016009/pexels-photo-13016009.jpeg');
